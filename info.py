@@ -26,8 +26,8 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://envs.sh/qbb.jpg')).split()
-PRIME_LOGO = (environ.get('PRIME_LOGO', 'https://envs.sh/qbb.jpg'))
+PICS = (environ.get('PICS', 'https://graph.org/file/00760d18d1656661e73bd.jpg')).split()
+PRIME_LOGO = (environ.get('PRIME_LOGO', 'https://graph.org/file/00760d18d1656661e73bd.jpg'))
 
 # Admins, Channels & Users *
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -57,7 +57,7 @@ lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrena
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [] #Add user id of the user in this field those who you want to be Authentic user for file renaming features
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
 
-QR_CODE_IMG = environ.get('QR_CODE_IMG','https://envs.sh/qbb.jpg') #add url link of your qr code to recieve money - use telegraph bot or other source to get image
+QR_CODE_IMG = environ.get('QR_CODE_IMG','https://graph.org/file/00760d18d1656661e73bd.jpg') #add url link of your qr code to recieve money - use telegraph bot or other source to get image
 UPI_ID = environ.get('UPI_ID', 'lazydeveloper@ybl') #enter your upi id here - grab it from your online payment methods.
 
 # Others
